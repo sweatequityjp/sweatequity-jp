@@ -1,0 +1,1 @@
+# sweatequity-jp ![Build and Deploy](https://github.com/sweatequityjp/sweatequity-jp/workflows/deploy/badge.svg)

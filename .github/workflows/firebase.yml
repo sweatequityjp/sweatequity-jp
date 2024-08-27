@@ -1,0 +1,32 @@
+name: deploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.133.1'
+      - run: hugo --minify
+      - uses: actions/upload-artifact@v4
+        with:
+          name: public
+          path: public
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: public
+          path: public
+      - uses: w9jds/firebase-action@master
+        with:
+          args: deploy --only hosting --project sweatequity-jp
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
