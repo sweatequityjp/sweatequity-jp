@@ -1,0 +1,14 @@
+{{ define "main" }}
+  <pre>{{ debug.Dump .Paginator.Pages }}</pre>
+  <pre>{{ debug.Dump .Site.RegularPages }}</pre>
+
+  {{ $pages := where .Site.RegularPages "Section" "posts" }}
+  <ul>
+    {{ range $pages }}
+      <li>
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <time>{{ .Date.Format "2006.01.02" }}</time>
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}

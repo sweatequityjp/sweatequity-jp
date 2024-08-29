@@ -1,0 +1,30 @@
+.header-layout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__title {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1em;
+  color: var(--color-trust-blue);
+  text-decoration: none;
+}
+
+.header__title > h1 {
+  margin: 0;
+  padding-inline-start: 0.25em;
+  font-size: 1.5em;
+}
+
+.header__nav {
+  display: flex;
+}
+
+.header__nav > * {
+  padding-inline-start: 1em;
+}
+
+.header__logo {
+  height: 48px;
+}

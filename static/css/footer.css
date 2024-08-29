@@ -1,0 +1,18 @@
+.footer {
+  flex-grow: 1;
+  margin-bottom: 0;
+  color: var(--color-white);
+  background-color: var(--color-trust-blue);
+
+  a {
+    color: var(--color-white);
+  }
+}
+
+.footer-layout {
+  display: flex;
+}
+
+.footer-layout > * {
+  width: 50%;
+}

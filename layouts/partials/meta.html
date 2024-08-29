@@ -1,15 +1,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-{{ if eq .Title .Site.Title }}
-  <title>{{ .Site.Title }}</title>
-{{ else }}
-  <title>{{ .Title }} - {{ .Site.Title }}</title>
-{{ end }}
+<title>{{ .Title }} - {{ .Site.Title }}</title>
 <link rel="icon" href="/favicon.png">
-<link rel="shortcut icon" href="/favicon.png">
-<link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+<link rel="shortcut icon" href="/img/favicon.png">
+<link rel="shortcut icon" href="/img/favicon.svg" type="image/svg+xml" sizes="any">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,400..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
-<link rel="stylesheet" href="/css/settings.css">
+<link rel="stylesheet" href="/css/app.css">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/footer.css">
 
 {{ if .IsPage }}
   {{ if .Summary }}
@@ -22,12 +21,12 @@
     <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.image }}">
     <meta name="twitter:card" content="summary_large_image">
   {{ else }}
-    <meta property="og:image" content="{{ .Site.BaseURL }}/img/apple-touch-icon.png">
+    <meta property="og:image" content="{{ .Site.BaseURL }}/img/logo.png">
     <meta name="twitter:card" content="summary">
   {{ end }}
 {{ else }}
   <meta property="og:description" content="{{ .Site.Params.description }}">
-  <meta property="og:image" content="{{ .Site.BaseURL }}/img/apple-touch-icon.png">
+  <meta property="og:image" content="{{ .Site.BaseURL }}/img/logo.png">
   <meta name="twitter:card" content="summary">
 {{ end }}
 

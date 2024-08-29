@@ -1,0 +1,7 @@
+baseURL: "https://sweatequity.jp"
+title: "Sweat Equity Partners"
+footnotereturnlinkcontents: "↩"
+contentDir: "content"
+dataDir: "data"
+publishDir: "public"
+defaultContentLanguage: "ja"
