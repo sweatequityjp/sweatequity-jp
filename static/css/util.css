@@ -1,0 +1,19 @@
+.sweat-blue {
+  color: var(--color-sweat-blue);
+}
+
+.trust-blue {
+  color: var(--color-trust-blue);
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}

@@ -1,9 +1,10 @@
 ---
-title: Article 1
-date: 2024-09-01
-draft: false
+title: Article 2
+date: 2024-07-01
+author:
+  - kantahironaka
 ---
 
-# Article 1
+# Article 2
 
 あああ

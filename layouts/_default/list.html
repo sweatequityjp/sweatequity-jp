@@ -1,14 +1,15 @@
 {{ define "main" }}
-  <pre>{{ debug.Dump .Paginator.Pages }}</pre>
-  <pre>{{ debug.Dump .Site.RegularPages }}</pre>
-
-  {{ $pages := where .Site.RegularPages "Section" "posts" }}
-  <ul>
-    {{ range $pages }}
-      <li>
-        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-        <time>{{ .Date.Format "2006.01.02" }}</time>
-      </li>
-    {{ end }}
-  </ul>
+  <section>
+    {{ .Content }}
+    <ul class="card-list">
+      {{ range .Pages }}
+        <li>
+          <a href="{{ .RelPermalink }}" class="card">
+            <time class="sweat-blue">{{ .Date.Format "2006-01-02" }}</time>
+            <h2 class="trust-blue no-margin">{{ .LinkTitle }}</h2>
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </section>
 {{ end }}
