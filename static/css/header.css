@@ -1,6 +1,6 @@
 .header {
   background-color: #fff;
-  box-shadow: 0 5px 10px rgba(154, 161, 177, .1);
+  box-shadow: 0 5px 10px rgb(154 161 177 / 10%);
 }
 
 .header-layout {
@@ -11,8 +11,8 @@
 .header__title {
   display: inline-flex;
   align-items: center;
-  font-size: 1em;
   color: var(--color-trust-blue);
+  font-size: 1em;
   text-decoration: none;
 
   h1 {
@@ -21,7 +21,7 @@
     font-size: 1.5em;
   }
 
-  @media (max-width: 600px) {
+  @media (width <= 600px) {
     h1 {
       display: none;
     }

@@ -1,8 +1,8 @@
 .footer {
   flex-grow: 1;
   margin-bottom: 0;
-  color: var(--color-white);
   background-color: var(--color-trust-blue);
+  color: var(--color-white);
 
   a {
     color: var(--color-white);

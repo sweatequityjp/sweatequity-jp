@@ -1,0 +1,15 @@
+{
+  "name": "sweatequity-jp",
+  "private": true,
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "test": "stylelint static/css/*.css"
+  },
+  "devDependencies": {
+    "stylelint": "^16.9.0",
+    "stylelint-config-property-sort-order-smacss": "^10.0.0",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-order": "^6.0.4"
+  }
+}
