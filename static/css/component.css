@@ -74,7 +74,7 @@
   object-fit: cover;
 }
 
-@media (min-width: 540px) {
+@media (min-width: 600px) {
   .avatar {
     float: left;
     margin-right: 32px;
