@@ -1,10 +1,10 @@
 ---
 title: Article 2
 date: 2024-07-01
-author:
-  - kantahironaka
+params:
+  author:
+    - kantahironaka
+type: posts
 ---
-
-# Article 2
 
 あああ

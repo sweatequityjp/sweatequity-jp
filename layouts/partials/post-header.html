@@ -1,0 +1,9 @@
+<p class="text-right">
+  Published at <time>{{ .Date.Format "2006-01-02" }}</time>
+  {{ if .Params.author }}
+    <br>Written by
+    {{ range $author := .Params.author }}
+      <a href="/team/#{{ $author }}" class="author">{{ $author }}</a>
+    {{ end }}
+  {{ end }}
+</p>
