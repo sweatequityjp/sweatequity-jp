@@ -11,8 +11,8 @@
 
 .footer-layout {
   display: flex;
-}
 
-.footer-layout > * {
-  width: 50%;
+  > * {
+    width: 50%;
+  }
 }

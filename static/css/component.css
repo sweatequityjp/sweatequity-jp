@@ -1,7 +1,7 @@
 .hero {
   display: flex;
   flex-wrap: wrap;
-  gap: 4em;
+  gap: 2em;
   justify-content: space-between;
 
   > * {
@@ -12,7 +12,7 @@
 .business {
   display: flex;
   flex-wrap: wrap;
-  gap: 4em;
+  gap: 2em;
   justify-content: space-between;
 
   > * {

@@ -63,7 +63,7 @@ dd > ul {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 16px;
+  padding: 1em;
 
   section {
     margin: 4em 0;
