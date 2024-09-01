@@ -1,0 +1,30 @@
+<p class="text-right">
+  <button id="share" class="button">この記事を共有する</button>
+</p>
+
+<div popover="auto" id="popover">タイトルと URL をコピーしました</div>
+
+<script type="module">
+  document.querySelector('#share').addEventListener('click', async () => {
+    const data = {
+      title: document.title,
+      text: document.title,
+      url: location.href
+    };
+
+    const ua = navigator.userAgent;
+    const isMobile = ua.includes('iPhone') || ua.includes('Android');
+
+    if (navigator.canShare?.(data) && isMobile) {
+      await navigator.share(data);
+    } else {
+      await navigator.clipboard?.writeText(`${data.title} ${data.url}`);
+      const popover = document.querySelector('#popover');
+      popover.showPopover();
+
+      setTimeout(() => {
+        popover.hidePopover();
+      }, 2000);
+    }
+  });
+</script>
