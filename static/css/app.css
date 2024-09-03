@@ -68,4 +68,8 @@ dd > ul {
   section {
     margin: 4em 0;
   }
+
+  img {
+    width: 100%;
+  }
 }
