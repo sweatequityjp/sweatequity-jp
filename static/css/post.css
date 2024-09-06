@@ -1,4 +1,10 @@
 .post {
+  h3 {
+    color: var(--color-gray);
+    font-weight: normal;
+    font-style: italic;
+  }
+
   img {
     width: 100%;
   }
